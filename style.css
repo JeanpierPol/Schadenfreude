@@ -1,0 +1,11 @@
+.topbarContainer {
+  height: 50px;
+  width: 100%;
+  background-color: #004aad;
+}
+
+* {
+  margin: 0;
+  font-family: 'Benne';
+}
+/*# sourceMappingURL=style.css.map */
