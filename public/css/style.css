@@ -11,6 +11,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .topbarContainer .topbarLeft {
@@ -140,12 +141,96 @@
           flex: 3.5;
 }
 
+.rightbar .rightbarWrapper {
+  padding: 20px 20px 0 0;
+}
+
+.rightbar .birthdayContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rightbar .bithdayImg {
+  width: 40px;
+  height: 40px;
+}
+
+.rightbar .birthdayText {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.rightbar .rightbarAd {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.rightbar .rightbarTitle {
+  margin-bottom: 20px;
+}
+
+.rightbar .rightbarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.rightbar .rightbarFriend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.rightbar .rightbarProfileImgContainer {
+  margin-right: 10px;
+  position: relative;
+}
+
+.rightbar .rightbarProfileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rightbar .rightbarOnline {
+  width: 15px;
+  height: 15px;
+  background-color: limegreen;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  border: 2px solid white;
+}
+
 .sidebar {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
   height: calc(100vh - 50px);
   overflow-y: scroll;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
 }
 
 .sidebar .sidebarWrapper {
@@ -352,6 +437,48 @@
 
 .post .postDate {
   font-size: 12px;
+}
+
+.post .postCenter {
+  margin: 20px 0;
+}
+
+.post .likeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.post .postImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.post .postBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post .postCommentText {
+  cursor: pointer;
+  border-bottom: 1px dashed grey;
+  font-size: 15px;
+}
+
+.post .postLikeCounter {
+  font-size: 15px;
 }
 
 * {
