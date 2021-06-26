@@ -1,9 +1,13 @@
-$color-primario: #004aad ;
-
+@import "varColors/colors";
 @import "bar/topbar";
+@import "bar/feed";
+@import "bar/rightbar";
+@import "bar/sidebar";
+@import "pages/home";
+@import "share/share";
+@import "post/post";
 
-
-*{
-    margin: 0;
-    font-family: 'Benne';
+* {
+  margin: 0;
+  font-family: "Benne";
 }
